@@ -24,6 +24,7 @@ RUN apt-get install -qqy --no-install-recommends \
       lib32ncurses5 \
       lib32z1 \
       unzip \
+      openssl \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN rm -f /etc/ssl/certs/java/cacerts; \
